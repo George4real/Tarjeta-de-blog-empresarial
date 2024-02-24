@@ -8,29 +8,52 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    width: 380px;
+    width: 400px;
     height: 500px;
+    border-radius: 15px;
 }
 
 .card-img-container {
     position: relative;
     width: 100%;
     height: 300px;
+    border-radius: inherit;  
+}
+
+.card-title, .card-description {
+    padding: 0 30px;
+    margin-bottom: 20px ;
 }
 
 .img-fondo {
     width:  100%;
     height:  100%;
+    border-radius: inherit;
 }
 
 .img-pospuesta {
     position: absolute;
-    bottom: 0px;
+    bottom: -1px;
     left: 0px;
     width:  100%;
+}
+
+.img-footer {
+    height: 40px;
+    width: 40px;
+    border-radius:  50%;
+    border:  4px solid gray;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
 }
